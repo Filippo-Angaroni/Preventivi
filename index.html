@@ -6,14 +6,26 @@
     <title>Docuhhjment</title>
     
 </head>
-<body>
-    <div style="width: 100px; height: 100px; background-color: gold;"></div>
-    <button onclick="imposition(10, 3)"></button>
+<body style="display: flex; flex-direction: column;">
     
-    <select >
+    <select style="width: 200px;">
         <option value="pagina_singola">Pagina singola</option>
         <option value="pagina_doppia">Pagina doppia</option>
     </select>
+    
+    <label>Lunghezza foglio macchina</label>
+    <input type="number" inputmode="numeric" id="w-foglio-macchina" style="width: 100px; height: auto;">
+    
+    <label>Altezza foglio macchina</label>
+    <input type="number" inputmode="numeric" id="h-foglio-macchina" style="width: 100px; height: auto;">
+    
+    <label>Lunghezza formato finito</label>
+    <input type="number" inputmode="numeric" id="w-formato-finito" style="width: 100px; height: auto;">
+    
+    <label>Altezza formato finito</label>
+    <input type="number" inputmode="numeric" id="h-formato-finito" style="width: 100px; height: auto;">
+    
+
 
 
     <script src="index.js"></script>
