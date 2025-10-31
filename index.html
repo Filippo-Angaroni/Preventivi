@@ -13,20 +13,43 @@
         <option value="pagina_doppia">Pagina doppia</option>
     </select>
     
-    <label>Lunghezza foglio macchina</label>
-    <input type="text" inputmode="numeric" id="w-foglio-macchina" style="width: 100px; height: auto;">
-    
-    <label>Altezza foglio macchina</label>
-    <input type="text" inputmode="numeric" id="h-foglio-macchina" style="width: 100px; height: auto;">
-    
-    <label>Lunghezza formato finito</label>
-    <input type="text" inputmode="numeric" id="w-formato-finito" style="width: 100px; height: auto;">
-    
-    <label>Altezza formato finito</label>
-    <input type="text" inputmode="numeric" id="h-formato-finito" style="width: 100px; height: auto;">
-    
+    <div style="width: 100vw; display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Lunghezza foglio macchina</label>
+            <input type="text" inputmode="numeric" id="w-foglio-macchina" style="width: 100px; height: auto;">
+        </div>
 
-    <button onclick="imposition()">Calcola</button>
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Altezza foglio macchina</label>
+            <input type="text" inputmode="numeric" id="h-foglio-macchina" style="width: 100px; height: auto;">
+        </div>
+    </div>
+    
+    <div style="width: 100vw; display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Lunghezza formato finito</label>
+            <input type="text" inputmode="numeric" id="w-formato-finito" style="width: 100px; height: auto;">
+        </div>
+        
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Altezza formato finito</label>
+            <input type="text" inputmode="numeric" id="h-formato-finito" style="width: 100px; height: auto;">
+        </div>
+    </div>
+    
+    <div style="width: 100vw; display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Numero di pagine</label>
+            <input type="text" inputmode="numeric" id="numero-di-pagine" style="width: 100px; height: auto;">
+        </div>
+        
+        <div style="display: flex; flex-direction: column; margin: auto;">
+            <label>Altezza formato finito</label>
+            <input type="text" inputmode="numeric" id="h-formato-finito" style="width: 100px; height: auto;">
+        </div>
+    </div>
+
+    <button onclick="solve()">Calcola</button>
 
     <script src="index.js"></script>
 </body>
